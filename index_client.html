@@ -40,7 +40,7 @@
 		}
         
      
-   @media (max-width:375px) {
+ @media (max-width:375px) {
     .table-600 {
         max-width: 355px!important;
     }
@@ -89,34 +89,44 @@
     .space-under-order-data-title {
         height: 32px!important;
     }
-    .img-item {
-        padding-top: 19px!important;
-        padding-bottom: 9px!important;
-        padding-left: 0px!important;
-    }
-    .item-model {
+    .greetings-title {
         font-size: 0.875rem!important;
+        width: 321px!important ;
+    }
+    .img-item {
+        padding-bottom: 22px!important;
     }
     .item-name {
+        width: 200px!important;
+        font-size: 0.875rem!important;
+    }
+    .item-model {
         font-size: 0.75rem!important;
-        width: 192px!important;
+        padding-top: 8px!important;
+    }
+    .item-price {
+        font-size: 0.75rem!important;
         padding-top: 8px!important;
     }
     .item-code {
         font-size: 0.75rem!important;
         padding-top: 8px!important;
     }
-    
+
+    .wrapper-order-section {
+        padding-bottom: 4px!important;
+    }
+
     .item-amount {
-        display: block!important;
-        font-size: 0.875rem!important;
+        font-size: 0.75rem!important;
         padding-top: 8px!important;
     }
-    .item-price {
+    .item-full-price {
         display: block!important;
-        font-size: 0.875rem!important;
+        font-size: 0.75rem!important;
         padding-top: 4px!important;
     }
+    
     .footer-title {
         font-size: 1rem!important;
     }
@@ -159,7 +169,7 @@
         border-bottom: none!important;
     }
     .footer-info-wrapper.bottom {
-        padding-bottom: 17px!important;
+        padding-bottom: 13px!important;
      }
      .space-under-footer-info {
         height: 8px!important;
@@ -178,7 +188,7 @@
         padding-bottom: 8px!important;
      }
      .space-under-footer-text {
-        height: 48px!important;
+        height: 64px!important;
      }
      .farewell-title {
         font-size: 1rem!important;
@@ -189,7 +199,10 @@
      .max-672, .max-600, .width-672, .width-600 {
         width: 375px!important;
      }
-   }
+     .footer-call-title {
+        font-size: 0.875rem!important;
+     }
+}
 	</style>
 </head>
 
@@ -208,8 +221,8 @@
                             <table class="table-600 max-600" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px" align="center" border="0">
                                 <tr>
                                     <td class="logo" align="center">
-                                        <a target="_blank" href="https://logicpower.ua/" style="display: inline-block; font-size: 0;">
-                                            <img src="/logic_power/img/logo.png" alt="logo" width="325" height="63">
+                                        <a target="_blank" href="https://greenvision.ua/" style="display: inline-block; font-size: 0;">
+                                            <img src="img/logo.png" alt="logo" width="325" height="65.9">
                                         </a>
                                       </td>
                                 </tr>
@@ -224,11 +237,11 @@
                             <table class="table-600 navigation-table max-600" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px; border-bottom:1px solid #393D38" class="navigation" align="center" border="0">
                                 <tr align="center">
                                     <td>
-                                        <a class="navigation-item top" target="_blank" href="https://logicpower.ua/production" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Каталог</a>
-                                        <span style="width: 119.5px; display:inline-block"></span>
-                                        <a class="navigation-item center" target="_blank" href="https://logicpower.ua/blog" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Блог</a>
-                                        <span style="width: 110px; display:inline-block"></span>
-                                        <a class="navigation-item bottom" target="_blank" href="https://logicpower.ua/about-company/contact" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Контакты</a>
+                                        <a class="navigation-item top" target="_blank" href="https://greenvision.ua/ua/production" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Каталог</a>
+                                            <span style="width: 119.5px; display:inline-block"></span>
+                                        <a class="navigation-item center" target="_blank" href="https://greenvision.ua/ua/blog" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Блог</a>
+                                            <span style="width: 110px; display:inline-block"></span>
+                                        <a class="navigation-item bottom" target="_blank" href="https://greenvision.ua/ua/about-company/contact" style="display: inline-block;text-decoration: none;font-family: 'Inter', sans-serif; font-weight: 400; font-size: 1.5625rem; line-height: 140%; letter-spacing: 0.02em; color: #2B2B2B;">Контакты</a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -266,21 +279,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="table-672 max-672" style="max-width:672px;height:40px;"></td>
+                        <td class="table-672 max-672" style="max-width:672px;height:36px;"></td>
                     </tr>
                     <tr>
                         <td>
                             <table class="table-600 width-600" cellpadding="0" cellspacing="0" style="width:600px" align="center" border="0">
                                 <tr>
                                     <td align="left">
-                                        <span style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 4px; border: 1px solid #B4B4B4; border-radius: 4px;">
-                                            <img class="img-item" src="/logic_power/img/item.png" alt="item" width="104" height="104" style="padding-top: 26px;padding-bottom: 11px;padding-left: 26px; padding-right: 16px;">
+                                        <span class="wrapper-order-section" style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 8px; border: 1px solid #B4B4B4; border-radius: 4px;">
+                                            <img class="img-item" src="img/item.png" alt="item" width="104" height="104" style="padding-bottom: 37px; padding-right: 16px;">
                                             <span style="display: inline-block;">
-                                                <span class="item-model" style="font-family: 'Inter', sans-serif; font-weight: 700; color: #F36C21; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem;">LP-U600VA-3PS (360Вт)</span>
-                                                <span class="item-name" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Источник бесперебойного питания (ИБП)</span>
-                                                <span class="item-code" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
-                                                <span class="item-amount" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Количество: 32 шт</span>
-                                                <span class="item-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Стоимость: 20 954 ₴</span>
+                                                <span class="item-name" style="width: 445px; font-family: 'Inter', sans-serif; font-weight: 700; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem; display: block">Источник бесперебойного питания (ИБП)</span>
+                                                <span class="item-model" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-weight: 400; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1rem; display: block;">LP-U600VA-3PS (360Вт)</span>
+                                                <span class="item-price" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #F36C21; display: block;">Цiна: 20 954 ₴</span>
+                                                <span class="item-code" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
+                                                <span class="item-amount" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Кiлькiсть: 32 шт</span>
+                                                <span class="item-full-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Загальна вартість: 20 954 ₴</span>
                                             </span>
                                         </span>
                                     </td>
@@ -296,14 +310,15 @@
                             <table class="table-600 width-600" cellpadding="0" cellspacing="0" style="width:600px" align="center" border="0">
                                 <tr>
                                     <td align="left">
-                                        <span style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 4px; border: 1px solid #B4B4B4; border-radius: 4px;">
-                                            <img class="img-item" src="/logic_power/img/item.png" alt="item" width="104" height="104" style="padding-top: 26px;padding-bottom: 11px;padding-left: 26px; padding-right: 16px;">
+                                        <span class="wrapper-order-section" style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 8px; border: 1px solid #B4B4B4; border-radius: 4px;">
+                                            <img class="img-item" src="img/item.png" alt="item" width="104" height="104" style="padding-bottom: 37px; padding-right: 16px;">
                                             <span style="display: inline-block;">
-                                                <span class="item-model" style="font-family: 'Inter', sans-serif; font-weight: 700; color: #F36C21; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem;">LP-U600VA-3PS (360Вт)</span>
-                                                <span class="item-name" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Источник бесперебойного питания (ИБП)</span>
-                                                <span class="item-code" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
-                                                <span class="item-amount" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Количество: 32 шт</span>
-                                                <span class="item-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Стоимость: 20 954 ₴</span>
+                                                <span class="item-name" style="width: 445px; font-family: 'Inter', sans-serif; font-weight: 700; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem; display: block">Источник бесперебойного питания (ИБП)</span>
+                                                <span class="item-model" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-weight: 400; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1rem; display: block;">LP-U600VA-3PS (360Вт)</span>
+                                                <span class="item-price" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #F36C21; display: block;">Цiна: 20 954 ₴</span>
+                                                <span class="item-code" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
+                                                <span class="item-amount" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Кiлькiсть: 32 шт</span>
+                                                <span class="item-full-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Загальна вартість: 20 954 ₴</span>
                                             </span>
                                         </span>
                                     </td>
@@ -319,14 +334,15 @@
                             <table class="table-600 width-600" cellpadding="0" cellspacing="0" style="width:600px" align="center" border="0">
                                 <tr>
                                     <td align="left">
-                                        <span style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 4px; border: 1px solid #B4B4B4; border-radius: 4px;">
-                                            <img class="img-item" src="/logic_power/img/item.png" alt="item" width="104" height="104" style="padding-top: 26px;padding-bottom: 11px;padding-left: 26px; padding-right: 16px;">
+                                        <span class="wrapper-order-section" style="display: block; padding-left: 0; padding-top: 4px; padding-right: 0; padding-bottom: 8px; border: 1px solid #B4B4B4; border-radius: 4px;">
+                                            <img class="img-item" src="img/item.png" alt="item" width="104" height="104" style="padding-bottom: 37px; padding-right: 16px;">
                                             <span style="display: inline-block;">
-                                                <span class="item-model" style="font-family: 'Inter', sans-serif; font-weight: 700; color: #F36C21; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem;">LP-U600VA-3PS (360Вт)</span>
-                                                <span class="item-name" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Источник бесперебойного питания (ИБП)</span>
-                                                <span class="item-code" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
-                                                <span class="item-amount" style="padding-top: 16px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Количество: 32 шт</span>
-                                                <span class="item-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Стоимость: 20 954 ₴</span>
+                                                <span class="item-name" style="width: 445px; font-family: 'Inter', sans-serif; font-weight: 700; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1.5rem; display: block">Источник бесперебойного питания (ИБП)</span>
+                                                <span class="item-model" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-weight: 400; color: #2B2B2B; letter-spacing: 0.02em; line-height: 130%;;margin-bottom: 0; margin-top: 0; font-size: 1rem; display: block;">LP-U600VA-3PS (360Вт)</span>
+                                                <span class="item-price" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #F36C21; display: block;">Цiна: 20 954 ₴</span>
+                                                <span class="item-code" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; display: block;">Код: 1324</span>
+                                                <span class="item-amount" style="padding-top: 8px; font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em;color: #2B2B2B; font-weight: 700; display: inline-block; padding-right: 24px;">Кiлькiсть: 32 шт</span>
+                                                <span class="item-full-price" style=" font-family: 'Inter', sans-serif; font-size: 1rem; line-height: 140%;letter-spacing: 0.02em; font-weight: 700; color: #F36C21; display: inline-block;">Загальна вартість: 20 954 ₴</span>
                                             </span>
                                         </span>
                                     </td>
@@ -410,38 +426,50 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="space-under-footer-text max-672" style="max-width:672px; height: 64px;"></td>
+                        <td class="space-under-footer-text max-672" style="max-width:672px; height: 168px;"></td>
                     </tr>
                     <tr>
                         <td>
                             <table class="table-600 width-600" cellpadding="0" cellspacing="0" style="width:600px" align="center" border="0">
                                 <tr>
-                                    <td align="center">
-                                        <span class="farewell-title" style="font-family: 'Inter', sans-serif; font-size: 1.25rem; line-height: 150%;letter-spacing: 0.02em;color: #F36C21; font-weight: 600; display: inline-block;">Присоединяйтесь</span>
+                                    <td style="border-bottom: 1px solid #F36C21;">
+                                        <span class="footer-call-title" style="font-family: 'Inter', sans-serif; display: block; font-weight: 700; font-size: 1.125rem; text-align: center; line-height: 140%;">Почта: info@greenvision.ua</span>
+                                        <span class="footer-call-title" style="font-family: 'Inter', sans-serif; display: block; font-weight: 700; font-size: 1.125rem; text-align: center; line-height: 140%; padding-top: 8px; padding-bottom: 16px;">Горячая линия: 0 800 218 536</span>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
-                        <td class="table-672 width-672" style="width:672px; height: 19px;"></td>
+                        <td style="padding-top: 16px;">
+                            <table class="table-600 width-600" cellpadding="0" cellspacing="0" style="width:600px" align="center" border="0">
+                                <tr>
+                                    <td align="center">
+                                        <span class="farewell-title" style="font-family: 'Inter', sans-serif; font-size: 1.25rem; line-height: 150%;color: #0E0F0F; font-weight: 600; display: inline-block; text-transform: uppercase;">Присоединяйтесь</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="table-672 width-672" style="width:672px; height: 10px;"></td>
                     </tr>
                     <tr>
                         <td>
                             <table class="table-672 width-672" cellpadding="0" cellspacing="0" style="width:672px" align="center" border="0">
                                 <tr>
                                     <td align="center">
-                                    <a target="_blank" href="https://www.facebook.com/logicpower.official/" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 58px;">
-                                       <img src="/logic_power/img/facebook.png" alt="facebook" width="24" height="24"> 
+                                    <a target="_blank" href="https://www.facebook.com/greenvision.ua/" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 58px;">
+                                       <img src="img/facebook.png" alt="facebook" width="24" height="24"> 
                                     </a>
-                                    <a target="_blank" href="https://www.instagram.com/logicpower_official/?igshid=17r5yqu67su5j" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 53px;">
-                                        <img src="/logic_power/img/instagram.png" alt="facebook" width="24" height="24"> 
+                                    <a target="_blank" href="https://www.instagram.com/greenvision.ua/" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 53px;">
+                                        <img src="img/instagram.png" alt="facebook" width="24" height="24"> 
                                     </a>
-                                    <a target="_blank" href="https://www.youtube.com/channel/UCy8sx2LSb7clwULG-X-cCyQ" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 52px;">
-                                        <img src="/logic_power/img/youtube.png" alt="facebook" width="24" height="24"> 
+                                    <a target="_blank" href="https://www.youtube.com/channel/UCsVLIuW7xx4X2lfnaUO_pyw" style="text-decoration: none;font-size: 0; display: inline-block; padding-right: 52px;">
+                                        <img src="img/youtube.png" alt="facebook" width="24" height="24"> 
                                     </a>
-                                    <a target="_blank" href="https://t.me/LogicPowerBlog" style="text-decoration: none;font-size: 0; display: inline-block;">
-                                        <img src="/logic_power/img/telegram.png" alt="facebook" width="24" height="24"> 
+                                    <a target="_blank" href="https://t.me/greenvision_official" style="text-decoration: none;font-size: 0; display: inline-block;">
+                                        <img src="img/telegram.png" alt="facebook" width="24" height="24"> 
                                     </a>
                                     </td>
                                 </tr>
